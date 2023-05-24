@@ -25,7 +25,7 @@ class Channel:
 
     def __add__(self, other):
         """Метод для сложения двух каналов по количеству подписчиков"""
-        return self.subscriber_count + other.subscriber_count
+        return int(self.subscriber_count) + int(other.subscriber_count)
 
     def __sub__(self, other):
         """Метод для вычитания двух каналов по количеству подписчиков"""
